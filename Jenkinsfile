@@ -33,6 +33,18 @@ stage('Build') {
             }
       }
    }
+stage('Deploy') {
+     steps {
+            deleteDir()
+            unstash 'source'
+            dir('src\\dotnet-jenkins-demo'){
+                script{
+                    bat '"C:\\Program Files\\dotnet\\dotnet.exe" publish -c release -o /app --no-restore' 
+                }
+            }
+      }
+   }   
+
  }
 }
 
