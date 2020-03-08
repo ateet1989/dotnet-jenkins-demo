@@ -44,7 +44,6 @@ D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\bin\Debug\netcoreapp3.1\d
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\bin\Debug\netcoreapp3.1\dotnet-jenkins-demo.pdb
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\bin\Debug\netcoreapp3.1\dotnet-jenkins-demo.Views.dll
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\bin\Debug\netcoreapp3.1\dotnet-jenkins-demo.Views.pdb
-D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.csprojAssemblyReference.cache
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.MvcApplicationPartsAssemblyInfo.cache
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.RazorAssemblyInfo.cache
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.RazorAssemblyInfo.cs
@@ -68,3 +67,4 @@ D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\s
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.dll
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.pdb
 D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.csproj.CopyComplete
+D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp3.1\dotnet-jenkins-demo.csprojAssemblyReference.cache
