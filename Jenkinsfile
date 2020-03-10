@@ -28,21 +28,15 @@ stage('Build') {
             unstash 'source'
             dir('src\\dotnet-jenkins-demo'){
                 script{
-                    bat '"C:\\Program Files\\dotnet\\dotnet.exe" build "src\\dotnet-jenkins-demo\\dotnet-jenkins-demo.csproj" --configuration Release' 
-                }
-            }
-      }
-   }
-stage('Publish') {
-     steps {
-            deleteDir()
-            unstash 'source'
-            dir('src\\dotnet-jenkins-demo'){
-                script{
                     bat '"C:\\Program Files\\dotnet\\dotnet.exe" publish -c release -o /app --no-restore' 
                 }
             }
+			zip "dotnet-jenkins-demo.zip"
       }
+   }
+stage('Deploy') {
+     azureWebAppPublish azureCredentialsId: env.AZURE_CRED_ID,
+      resourceGroup: env.RES_GROUP, appName: env.WEB_APP, filePath: "dotnet-jenkins-demo.zip"
    }   
 
  }
