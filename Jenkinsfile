@@ -38,7 +38,7 @@ stage('Deploy') {
 	steps {
 			dir('src\\dotnet-jenkins-demo'){
 			 azureWebAppPublish azureCredentialsId: env.AZURE_CRED_ID,
-			  resourceGroup: env.RES_GROUP, appName: env.WEB_APP, sourceDirectory: "src/dotnet-jenkins-demo/bin/Release/netcoreapp3.1
+			  resourceGroup: env.RES_GROUP, appName: env.WEB_APP, sourceDirectory: "src/dotnet-jenkins-demo/bin/Release/netcoreapp3.1"
 			}   
 	   }
 	}
