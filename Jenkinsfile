@@ -30,15 +30,20 @@ stage('Build') {
                 script{
                     bat '"C:\\Program Files\\dotnet\\dotnet.exe" publish -c release -o /app --no-restore' 
                 }
+				zip zipfile "dotnet-jenkins-demo.zip"
+				zip zipfile "dotnet-jenkins-demo.zip"
             }
-			zip "dotnet-jenkins-demo.zip"
+			
       }
    }
 stage('Deploy') {
-     azureWebAppPublish azureCredentialsId: env.AZURE_CRED_ID,
-      resourceGroup: env.RES_GROUP, appName: env.WEB_APP, filePath: "dotnet-jenkins-demo.zip"
-   }   
-
+	steps {
+			dir('src\\dotnet-jenkins-demo'){
+			 azureWebAppPublish azureCredentialsId: env.AZURE_CRED_ID,
+			  resourceGroup: env.RES_GROUP, appName: env.WEB_APP, filePath: "dotnet-jenkins-demo.zip"
+			}   
+	   }
+	}
  }
 }
 
