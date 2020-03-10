@@ -30,8 +30,6 @@ stage('Build') {
                 script{
                     bat '"C:\\Program Files\\dotnet\\dotnet.exe" publish -c release -o /app --no-restore' 
                 }
-				zip zipfile "dotnet-jenkins-demo.zip"
-				zip zipfile "dotnet-jenkins-demo.zip"
             }
 			
       }
