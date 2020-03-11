@@ -38,7 +38,7 @@ stage('Deploy') {
 	steps {
 			
 			 azureWebAppPublish azureCredentialsId: params.AZURE_CRED_ID,
-			  resourceGroup: params.RES_GROUP, appName: params.WEB_APP, sourceDirectory: "/app"
+			  resourceGroup: params.RES_GROUP, appName: params.WEB_APP, sourceDirectory: "C:\\app"
 			
 	   }
 	}
