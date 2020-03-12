@@ -1,4 +1,0 @@
-D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp2.1\dotnet-jenkins-demo.csprojAssemblyReference.cache
-D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp2.1\dotnet-jenkins-demo.csproj.CoreCompileInputs.cache
-D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp2.1\dotnet-jenkins-demo.AssemblyInfoInputs.cache
-D:\Jenkins\dotnet-jenkins-demo\src\dotnet-jenkins-demo\obj\Debug\netcoreapp2.1\dotnet-jenkins-demo.AssemblyInfo.cs
