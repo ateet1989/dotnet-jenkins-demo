@@ -15,6 +15,7 @@ pipeline {
 					 deleteDir()
 					 unstash 'source'
 					 script {
+						 bat '"C:\\Program Files\\dotnet\\dotnet.exe" clean -c release -o "src\\dotnet-jenkins-demo.sln"'
 						 bat '"C:\\Program Files\\dotnet\\dotnet.exe" restore "src\\dotnet-jenkins-demo.sln" '
 					 }             
 				}
@@ -25,7 +26,8 @@ pipeline {
 					unstash 'source'
 					dir('src\\dotnet-jenkins-demo'){
 						script{
-							bat '"C:\\Program Files\\dotnet\\dotnet.exe" clean -c release -o /app' 
+							bat '"C:\\Program Files\\dotnet\\dotnet.exe" clean -c release -o /app'
+							bat '"C:\\Program Files\\dotnet\\dotnet.exe" build -c release -o /app' 
 							bat '"C:\\Program Files\\dotnet\\dotnet.exe" publish -c release -o /app --no-restore' 
 						}
 					}
