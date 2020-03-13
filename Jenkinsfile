@@ -13,10 +13,7 @@ pipeline {
 		stage ('Restore Packages') {     
 			 steps {
 					 deleteDir()
-					 unstash 'source'
-					 script {
-						 
-					 }             
+					 unstash 'source'             
 				}
 		}
 		stage('Build') {
