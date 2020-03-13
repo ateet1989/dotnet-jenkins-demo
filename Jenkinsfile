@@ -4,13 +4,6 @@ pipeline {
 		skipDefaultCheckout()
 	}
 	stages {
-		stage('Setup') {
-			steps {
-				dir ('bin') {
-					deleteDir()
-				}
-			}
-		}
 		stage ('Checkout') {
 			steps {
 					checkout(scm)
