@@ -4,6 +4,13 @@ pipeline {
 		skipDefaultCheckout()
 	}
 	stages {
+		stage('Setup') {
+			steps {
+				dir ('bin') {
+					deleteDir()
+				}
+			}
+		}
 		stage ('Checkout') {
 			steps {
 					checkout(scm)
@@ -13,7 +20,10 @@ pipeline {
 		stage ('Restore Packages') {     
 			 steps {
 					 deleteDir()
-					 unstash 'source'             
+					 unstash 'source'  
+					 script{
+						bat '"C:\\Program Files\\dotnet\\dotnet.exe" restore "src\\dotnet-jenkins-demo.sln"'
+					 }
 				}
 		}
 		stage('Build') {
